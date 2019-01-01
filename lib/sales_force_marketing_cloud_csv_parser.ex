@@ -3,16 +3,5 @@ defmodule SalesForceMarketingCloudCsvParser do
   Documentation for SalesForceMarketingCloudCsvParser.
   """
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> SalesForceMarketingCloudCsvParser.hello()
-      :world
-
-  """
-  def hello do
-    :world
-  end
+  NimbleCSV.define(Parser, separator: ",", escape: "\"")
 end
